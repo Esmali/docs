@@ -1,0 +1,451 @@
+<mxfile host="app.diagrams.net" modified="2026-07-22T19:23:55.068Z" agent="ChatGPT draw.io XML generator" version="29.6.1" type="device">
+  <diagram id="eicam-phase1-v4" name="Phase 1 - v4">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1700" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="&lt;b&gt;Department of Defense Enterprise Identity, Credential, and Access Management (E-ICAM) — Phase 1 Architecture&lt;/b&gt;" style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#1f1f1f;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1520" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="scope" value="&lt;b&gt;Two independent Phase 1 deliverables:&lt;/b&gt; embedded advisory question-and-answer concierge and deterministic rule-based validation quick win. No SailPoint provisioning actions." style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1.25;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="150" y="68" width="1300" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="intake-band" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="40" y="125" width="1520" height="240" as="geometry"/>
+        </mxCell>
+        <mxCell id="orchestration-band" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#808080;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="40" y="395" width="1520" height="500" as="geometry"/>
+        </mxCell>
+        <mxCell id="storage-band" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="40" y="925" width="1520" height="395" as="geometry"/>
+        </mxCell>
+        <mxCell id="intake-label" value="&lt;b&gt;Intake Layer&lt;/b&gt;" style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="55" y="205" width="100" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="orch-label" value="&lt;b&gt;Orchestration and&lt;br&gt;Azure AI Foundry Layer&lt;/b&gt;" style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="55" y="600" width="115" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="storage-label" value="&lt;b&gt;Storage and&lt;br&gt;Developer Resources Layer&lt;/b&gt;" style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="55" y="1050" width="115" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="qa-usecase-title" value="&lt;b&gt;Mission Partner Question-and-Answer Use Case&lt;/b&gt;" style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#595959;" vertex="1" parent="1">
+          <mxGeometry x="175" y="135" width="500" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="mission-actor" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#808080;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="185" y="185" width="55" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="mission-label" value="&lt;b&gt;Mission Partner&lt;/b&gt;" style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#595959;" vertex="1" parent="1">
+          <mxGeometry x="155" y="252" width="115" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="gray-1" value="1" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#7f7f7f;strokeColor=#7f7f7f;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="198" y="162" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="example-questions" value="&lt;b&gt;Example onboarding questions&lt;/b&gt;&lt;br&gt;• What role information is required?&lt;br&gt;• How should role names be structured?&lt;br&gt;• What are dynamic attributes?" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#808080;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;align=left;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="275" y="165" width="300" height="125" as="geometry"/>
+        </mxCell>
+        <mxCell id="portal" value="&lt;b&gt;Defense Enterprise Authentication Service (DEAS)&lt;br&gt;Onboarding Portal&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;existing Blazor web application&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="625" y="185" width="245" height="78" as="geometry"/>
+        </mxCell>
+        <mxCell id="chat" value="&lt;b&gt;Embedded Onboarding&lt;br&gt;Question-and-Answer Chat&lt;/b&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#808080;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="930" y="185" width="245" height="78" as="geometry"/>
+        </mxCell>
+        <mxCell id="entra" value="&lt;b&gt;Microsoft Entra ID&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;Azure Government and Common Access Card-backed authentication&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="625" y="285" width="245" height="58" as="geometry"/>
+        </mxCell>
+        <mxCell id="qa-mission-portal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#7f7f7f;strokeWidth=2;" edge="1" parent="1" source="mission-actor" target="portal">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qa-mission-portal-label" value="asks questions in the portal" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qa-mission-portal">
+          <mxGeometry x="0" y="-1" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qa-portal-chat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#7f7f7f;strokeWidth=2;" edge="1" parent="1" source="portal" target="chat">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qa-portal-chat-label" value="opens embedded chat" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qa-portal-chat">
+          <mxGeometry x="0" y="-1" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qa-auth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#666666;strokeWidth=1.5;" edge="1" parent="1" source="entra" target="portal">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qa-auth-label" value="authentication" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qa-auth">
+          <mxGeometry x="-0.25" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gray-2" value="2" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#7f7f7f;strokeColor=#7f7f7f;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="900" y="350" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="chat-api" value="&lt;b&gt;Blazor Chatbot Application Programming Interface (API)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;POST /chat • POST /chat/stream • GET /content/{file}&lt;br&gt;GET /config • GET /auth_setup&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#808080;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="940" y="342" width="365" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="apim" value="&lt;b&gt;Azure API Management&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;exposes, authenticates, governs, routes and throttles secure API requests&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#808080;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="940" y="447" width="365" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="qa-chat-api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#7f7f7f;strokeWidth=2;" edge="1" parent="1" source="chat" target="chat-api">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qa-chat-api-label" value="secure web request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qa-chat-api">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qa-api-apim" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#7f7f7f;strokeWidth=2;" edge="1" parent="1" source="chat-api" target="apim">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="content-group" value="&lt;b&gt;Onboarding Content Preparation&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;font-weight:normal;&quot;&gt;Initial/manual batch in Phase 1; automatic publish-triggered refresh is deferred.&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#808080;strokeWidth=1.5;align=left;verticalAlign=top;fontSize=12;fontStyle=1;spacingTop=8;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="175" y="505" width="305" height="325" as="geometry"/>
+        </mxCell>
+        <mxCell id="sharepoint" value="&lt;b&gt;Department of Defense E-ICAM&lt;br&gt;SharePoint Hub&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;onboarding, role, API and FAQ guidance&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="200" y="570" width="255" height="82" as="geometry"/>
+        </mxCell>
+        <mxCell id="extract" value="&lt;b&gt;Extract and Section-Based Chunking&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;preserve headings and source URLs&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="200" y="685" width="255" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="foundry-boundary" value="&lt;b&gt;Azure AI Foundry Project&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;font-weight:normal;&quot;&gt;Target Azure Government Impact Level 5 deployment; final model selection depends on approved regional availability.&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#f3eafa;strokeColor=#9673a6;strokeWidth=1.5;align=left;verticalAlign=top;fontSize=13;fontStyle=1;spacingTop=8;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="510" y="505" width="685" height="285" as="geometry"/>
+        </mxCell>
+        <mxCell id="gray-3" value="3" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#7f7f7f;strokeColor=#7f7f7f;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="525" y="548" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="agent" value="&lt;b&gt;Onboarding Question-and-Answer Agent&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;Retrieval-Augmented Generation: retrieve, generate grounded answer and return source links&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="560" y="550" width="280" height="82" as="geometry"/>
+        </mxCell>
+        <mxCell id="openai" value="&lt;b&gt;Azure OpenAI&lt;/b&gt;&lt;br&gt;&lt;b&gt;GPT-4o Deployment&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;or approved Impact Level 5 equivalent&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;spacingLeft=36;" vertex="1" parent="1">
+          <mxGeometry x="875" y="550" width="275" height="82" as="geometry"/>
+        </mxCell>
+        <mxCell id="openai-icon" value="" style="image;aspect=fixed;html=1;points=[];align=center;image=img/lib/azure2/ai_machine_learning/Azure_OpenAI.svg;" vertex="1" parent="1">
+          <mxGeometry x="887" y="567" width="28" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="embedding" value="&lt;b&gt;Embedding Model Deployment&lt;/b&gt;&lt;br&gt;&lt;b&gt;text-embedding-3 target&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;vector dimensions set after approved model selection&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="560" y="665" width="280" height="82" as="geometry"/>
+        </mxCell>
+        <mxCell id="search" value="&lt;b&gt;Azure AI Search&lt;/b&gt;&lt;br&gt;&lt;b&gt;Vector and Semantic Retrieval&lt;/b&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;spacingLeft=36;" vertex="1" parent="1">
+          <mxGeometry x="875" y="665" width="275" height="82" as="geometry"/>
+        </mxCell>
+        <mxCell id="search-icon" value="" style="image;aspect=fixed;html=1;points=[];align=center;image=img/lib/azure2/ai_machine_learning/Serverless_Search.svg;" vertex="1" parent="1">
+          <mxGeometry x="887" y="686" width="28" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="gray-4" value="4" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#7f7f7f;strokeColor=#7f7f7f;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="548" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="logic" value="&lt;b&gt;Azure Logic Apps&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;human-in-the-loop escalation&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#808080;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;spacingLeft=36;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="550" width="260" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="logic-icon" value="" style="image;aspect=fixed;html=1;points=[];align=center;image=img/lib/azure2/integration/Logic_Apps.svg;" vertex="1" parent="1">
+          <mxGeometry x="1272" y="570" width="28" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="cet" value="&lt;b&gt;Identity, Credential, and Access Management&lt;br&gt;Customer Engagement Team&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;receives unanswered or low-confidence cases&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#808080;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="665" width="260" height="82" as="geometry"/>
+        </mxCell>
+        <mxCell id="guardrail" value="&lt;b&gt;Runtime guardrail&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;Official hub content only; advisory answers with source links; no provisioning actions.&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1.25;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="775" width="260" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="qa-apim-agent" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#7f7f7f;strokeWidth=2;" edge="1" parent="1" source="apim" target="agent">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1122" y="535"/>
+              <mxPoint x="700" y="535"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qa-apim-agent-label" value="authenticated request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qa-apim-agent">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qa-agent-openai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#7f7f7f;strokeWidth=2;" edge="1" parent="1" source="agent" target="openai">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qa-agent-openai-label" value="generate grounded response" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#333333;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qa-agent-openai">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qa-agent-search" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#7f7f7f;strokeWidth=2;" edge="1" parent="1" source="agent" target="search">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="650"/>
+              <mxPoint x="850" y="706"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qa-agent-search-label" value="retrieve approved content" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#333333;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qa-agent-search">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qa-agent-logic" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#7f7f7f;strokeWidth=2;" edge="1" parent="1" source="agent" target="logic">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1180" y="590"/>
+              <mxPoint x="1180" y="585"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qa-agent-logic-label" value="low-confidence or unanswered" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#333333;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qa-agent-logic">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qa-logic-cet" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#7f7f7f;strokeWidth=2;" edge="1" parent="1" source="logic" target="cet">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qa-logic-cet-label" value="route for human follow-up" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#333333;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qa-logic-cet">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ingest-sharepoint-extract" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#666666;strokeWidth=1.5;" edge="1" parent="1" source="sharepoint" target="extract">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ingest-extract-embedding" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#666666;strokeWidth=1.5;" edge="1" parent="1" source="extract" target="embedding">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="720"/>
+              <mxPoint x="520" y="720"/>
+              <mxPoint x="520" y="706"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ingest-extract-embedding-label" value="create embeddings" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#333333;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ingest-extract-embedding">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ingest-embedding-search" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#666666;strokeWidth=1.5;" edge="1" parent="1" source="embedding" target="search">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ingest-embedding-search-label" value="index vectors and metadata" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#333333;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ingest-embedding-search">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prompt-db" value="&lt;b&gt;Prompt Staging Database&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;Azure Cosmos DB&lt;br&gt;chat history, state and answered-versus-routed outcome&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#808080;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;spacingLeft=36;" vertex="1" parent="1">
+          <mxGeometry x="175" y="970" width="270" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="prompt-db-icon" value="" style="image;aspect=fixed;html=1;points=[];align=center;image=img/lib/azure2/databases/Azure_Cosmos_DB.svg;" vertex="1" parent="1">
+          <mxGeometry x="188" y="995" width="28" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="blob" value="&lt;b&gt;Azure Blob Storage&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;source snapshots and extracted chunk artifacts&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#808080;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;spacingLeft=36;" vertex="1" parent="1">
+          <mxGeometry x="475" y="970" width="245" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="blob-icon" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#DF8C42;shape=mxgraph.veeam2.azure_blob;" vertex="1" parent="1">
+          <mxGeometry x="488" y="996" width="28" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="quickwin-title" value="&lt;b&gt;Quick Win — Deterministic Rule-Based Validation (No AI)&lt;/b&gt;" style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#0057D2;" vertex="1" parent="1">
+          <mxGeometry x="750" y="935" width="790" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="role-db" value="&lt;b&gt;Role Staging Database&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;Azure Cosmos DB&lt;br&gt;role sheets, workgroups and onboarding form responses&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0057D2;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;spacingLeft=36;" vertex="1" parent="1">
+          <mxGeometry x="750" y="970" width="280" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="role-db-icon" value="" style="image;aspect=fixed;html=1;points=[];align=center;image=img/lib/azure2/databases/Azure_Cosmos_DB.svg;" vertex="1" parent="1">
+          <mxGeometry x="763" y="995" width="28" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="devops" value="&lt;b&gt;Azure DevOps&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;source control, continuous integration and continuous delivery of validation scripts&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0057D2;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="970" width="235" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="vm" value="&lt;b&gt;Developer Resources — Azure Virtual Machines&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;host and execute deterministic rule-based validation scripts&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0057D2;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;spacingLeft=36;" vertex="1" parent="1">
+          <mxGeometry x="1315" y="970" width="225" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="vm-icon" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.virtual_machine;" vertex="1" parent="1">
+          <mxGeometry x="1328" y="994" width="28" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="blue-1" value="1" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1a73e8;strokeColor=#1a73e8;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="760" y="1090" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="csm-actor" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#0057D2;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="795" y="1120" width="55" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="csm-label" value="&lt;b&gt;Customer Success Manager&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;coordinates completed submission package&lt;/font&gt;" style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#0057D2;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1188" width="185" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="blue-2" value="2" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1a73e8;strokeColor=#1a73e8;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="1090" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="engineer-actor" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#0057D2;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="1120" width="55" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="engineer-label" value="&lt;b&gt;Identity, Credential, and Access Management Engineer&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;runs and reviews deterministic checks&lt;/font&gt;" style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#0057D2;" vertex="1" parent="1">
+          <mxGeometry x="985" y="1188" width="225" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="blue-3" value="3" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1a73e8;strokeColor=#1a73e8;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="935" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="blue-4" value="4" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1a73e8;strokeColor=#1a73e8;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="1090" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="report" value="&lt;b&gt;Submission Quality-Control&lt;br&gt;Anomaly Report&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;missing fields • invalid role names&lt;br&gt;prohibited characters • incomplete workgroups&lt;/font&gt;" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0057D2;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=11;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1355" y="1110" width="205" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="qa-agent-prompt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#7f7f7f;strokeWidth=2;" edge="1" parent="1" source="agent" target="prompt-db">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="590"/>
+              <mxPoint x="520" y="1015"/>
+              <mxPoint x="445" y="1015"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qa-agent-prompt-label" value="chat state and outcome logging" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#333333;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qa-agent-prompt">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ingest-extract-blob" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#7f7f7f;strokeWidth=2;dashed=1;dashPattern=6 6;" edge="1" parent="1" source="extract" target="blob">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="720"/>
+              <mxPoint x="470" y="1015"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ingest-extract-blob-label" value="store source and chunk artifacts" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#333333;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="ingest-extract-blob">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qw-csm-engineer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#1a73e8;strokeWidth=2;" edge="1" parent="1" source="csm-actor" target="engineer-actor">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qw-csm-engineer-label" value="completed submissions for validation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#0057D2;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qw-csm-engineer">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qw-engineer-vm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#1a73e8;strokeWidth=2;" edge="1" parent="1" source="engineer-actor" target="vm">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1097" y="1090"/>
+              <mxPoint x="1427" y="1090"/>
+              <mxPoint x="1427" y="1060"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qw-engineer-vm-label" value="trigger deterministic checks" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#0057D2;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qw-engineer-vm">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qw-role-vm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#1a73e8;strokeWidth=2;" edge="1" parent="1" source="role-db" target="vm">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qw-role-vm-label" value="onboarding submission responses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#0057D2;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qw-role-vm">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qw-devops-vm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#1a73e8;strokeWidth=2;dashed=1;dashPattern=6 6;" edge="1" parent="1" source="devops" target="vm">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qw-devops-vm-label" value="script deployment" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#0057D2;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qw-devops-vm">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qw-vm-report" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#1a73e8;strokeWidth=2;" edge="1" parent="1" source="vm" target="report">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qw-vm-report-label" value="generate anomaly findings" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#0057D2;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qw-vm-report">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qw-report-engineer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#1a73e8;strokeWidth=2;" edge="1" parent="1" source="report" target="engineer-actor">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1458" y="1245"/>
+              <mxPoint x="1097" y="1245"/>
+              <mxPoint x="1097" y="1185"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qw-report-engineer-label" value="review actionable findings" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#0057D2;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qw-report-engineer">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qw-engineer-csm-return" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#1a73e8;strokeWidth=2;" edge="1" parent="1" source="engineer-actor" target="csm-actor">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1097" y="1275"/>
+              <mxPoint x="822" y="1275"/>
+              <mxPoint x="822" y="1185"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qw-engineer-csm-return-label" value="if anomalies: return findings to the same Customer Success Manager" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#0057D2;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="qw-engineer-csm-return">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gray-panel" value="" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#808080;strokeWidth=1.5;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1340" width="740" height="250" as="geometry"/>
+        </mxCell>
+        <mxCell id="gray-panel-title" value="&lt;b&gt;Mission Partner Question-and-Answer Use Case&lt;/b&gt; &lt;font style=&quot;font-size:10px;color:#666666;&quot;&gt;(gray)&lt;/font&gt;" style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;fontColor=#595959;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1355" width="680" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="gray-panel-n1" value="1" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#7f7f7f;strokeColor=#7f7f7f;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1390" width="26" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="gray-panel-t1" value="The Mission Partner asks level-100/200 onboarding questions through the existing Defense Enterprise Authentication Service portal and its embedded chat." style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="102" y="1388" width="640" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="gray-panel-n2" value="2" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#7f7f7f;strokeColor=#7f7f7f;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1437" width="26" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="gray-panel-t2" value="The Blazor Chatbot Application Programming Interface crosses the intake/orchestration boundary. Azure API Management authenticates, governs and routes the request." style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="102" y="1435" width="640" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="gray-panel-n3" value="3" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#7f7f7f;strokeColor=#7f7f7f;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1484" width="26" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="gray-panel-t3" value="The Onboarding Question-and-Answer Agent retrieves approved guidance through Azure AI Search and uses the approved Azure OpenAI deployment to return a grounded answer with source links." style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="102" y="1482" width="640" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="gray-panel-n4" value="4" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#7f7f7f;strokeColor=#7f7f7f;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1531" width="26" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="gray-panel-t4" value="Low-confidence or unanswered questions route through Azure Logic Apps to the Identity, Credential, and Access Management Customer Engagement Team for human follow-up." style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="102" y="1529" width="640" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="blue-panel" value="" style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f9ff;strokeColor=#1a73e8;strokeWidth=1.5;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1340" width="740" height="250" as="geometry"/>
+        </mxCell>
+        <mxCell id="blue-panel-title" value="&lt;b&gt;Deterministic Quality-Control Quick Win&lt;/b&gt; &lt;font style=&quot;font-size:10px;color:#0057D2;&quot;&gt;(blue — rule-based, no AI)&lt;/font&gt;" style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;fontColor=#0057D2;" vertex="1" parent="1">
+          <mxGeometry x="845" y="1355" width="680" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="blue-panel-n1" value="1" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1a73e8;strokeColor=#1a73e8;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="845" y="1390" width="26" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="blue-panel-t1" value="The Customer Success Manager coordinates the completed onboarding submission package and sends it to the Identity, Credential, and Access Management Engineer for validation." style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="882" y="1388" width="640" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="blue-panel-n2" value="2" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1a73e8;strokeColor=#1a73e8;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="845" y="1437" width="26" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="blue-panel-t2" value="The engineer triggers the deterministic rule-based validation scripts hosted on Azure Virtual Machines and reviews the generated findings." style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="882" y="1435" width="640" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="blue-panel-n3" value="3" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1a73e8;strokeColor=#1a73e8;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="845" y="1484" width="26" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="blue-panel-t3" value="The Azure Virtual Machines read onboarding responses from the Role Staging Database. Azure DevOps supports controlled source management and deployment of the scripts." style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="882" y="1482" width="640" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="blue-panel-n4" value="4" style="fontFamily=Helvetica;ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1a73e8;strokeColor=#1a73e8;fontColor=#ffffff;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="845" y="1531" width="26" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="blue-panel-t4" value="The scripts generate the Submission Quality-Control Anomaly Report. When anomalies exist, the engineer returns the findings to the same Customer Success Manager for correction and follow-up." style="fontFamily=Helvetica;text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="882" y="1529" width="640" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="footer" value="&lt;b&gt;Gray flow:&lt;/b&gt; Mission Partner question-and-answer concierge &amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp; &lt;b&gt;Blue flow:&lt;/b&gt; deterministic quality-control quick win &amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp; Both are independent Phase 1 deliverables." style="fontFamily=Helvetica;rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#bdbdbd;strokeWidth=1.25;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1610" width="1520" height="48" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

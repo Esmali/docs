@@ -1,0 +1,20 @@
+Source,Requirement,Deadline,Risk,Compliance check
+UAA,"The Government requires
+GDIT to immediately provide technical labor support for completion of the following
+tasks within 30 days of receipt of this letter. Rapid onboarding of 250 – 300 applications to DOD E-ICAM Identify Provider
+(IDP) and Automated Account Provisioning (AAP). ",8-Aug,,"YES - p.1, Sec 1.0 para 1 ('rapidly onboard approximately 250-300 applications into the E-ICAM IDP and AAP'); also Sec 2.1 heading, p.1"
+UAA,"The Government will release the prioritization list of
+applications will be provided to the Participant within ten (10) days ",19-Jul,,NO
+UAA,"The NTE ceiling shall not exceed $550,000",9-Sep,,NO
+UAA,"The Parties agree to negotiate and execute a subsequent, definitive modification for this scope of work on or before the Target Definitization Date of",9-Sep-26,,"YES - p.7, Sec 6.0 Schedule & Milestones table, last row ('Government to issue the final, definitized modification deadline - 9-SEPT'); also p.1, Sec 1.0 para 3"
+UAA,Tech Proposal is due,24-Jul,,"YES - p.6, Sec 6.0 Schedule & Milestones table ('Technical Project Proposal Submitted - 24-JUL')"
+UAA,Price Poposal due ,24-Jul,,"YES - p.6, Sec 6.0 Schedule & Milestones table ('Price Proposal Submitted - 24-JUL')"
+UAA,Government and GDIT commence negotiations on or before August 10th,10-Aug,,"YES - p.7, Sec 6.0 Schedule & Milestones table ('Government and GDIT commence negotiations - 10-AUG')"
+UAA,Final definitized modification due,9-Sep,,"YES - p.7, Sec 6.0 Schedule & Milestones table, last row (9-SEPT definitized modification)"
+Clarifying Questions,PMO anticipated additional requirements beyond the initial 60 days for continued onboarding activities,,,"YES - p.1, Sec 1.0 para 3 ('In anticipation of additional requirements from the PMO...'); also p.7 schedule footnote ('*Preparation for anticipated requirements by the PMO')"
+Clarifying Questions,the technical work for this rapid onboarding effort must be completed?within 30 days?of receipt of the letter,8-Aug,"**What is the ""technical work""","YES - p.1, Sec 1.0 para 2 ('30 day technical work deadline of 8-AUG-2026'); also p.7, Sec 6.0 table ('Technical work completion deadline - 8-AUG')"
+Clarifying Questions,"Effort is focused on exeucting the ""standardized and rapid enterprise onboarding process""",,,"YES - p.1, Sec 2.1 numbered item 2 (AI Concierge Bot para quotes 'standardized and rapid enterprise onboarding process')"
+Clarifying Questions,support FM and non-FM systems,,,"YES - p.1, Sec 1.0 para 1 ('cover both Financial Management and non-Financial Management Systems')"
+Clarifying Questions,Responsible for onboarding to IDP and AAP,,,"YES - p.1, Sec 1.0 para 1 and Sec 2.1 heading (onboarding into IDP and AAP)"
+Clarifying Questions,Must onboard onto IL5 and IL6,,,"YES - p.1, Sec 1.0 para 1 ('spanning across IL5 and IL6'); note IL6 appears only here, IL5 also p.5 Sec 2.2"
+Clarifying Questions,Activities are limited to integrating apps within the DOD EICAM ATO boundary,,,NO
